@@ -1,11 +1,11 @@
 {
   "name": "poslucian",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && electron-builder && npx electron-builder --publish always",
+    "build": "tsc && vite build && electron-builder",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -30,20 +30,5 @@
     "vite-plugin-electron": "^0.28.6",
     "vite-plugin-electron-renderer": "^0.14.5"
   },
-  "main": "dist-electron/main.js",
-  "build": {
-    "appId": "com.lucian.pos",
-    "productName": "Lucian POS",
-    "files": [
-      "dist",
-      "dist-electron"
-    ],
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "TareqFl",
-        "repo": "lucianPos"
-      }
-    ]
-  }
+  "main": "dist-electron/main.js"
 }
