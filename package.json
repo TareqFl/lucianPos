@@ -1,7 +1,7 @@
 {
   "name": "poslucian",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -40,8 +40,9 @@
     ],
     "publish": [
       {
-        "provider": "generic",
-        "url": "https://hazelforelectron.vercel.app"
+        "provider": "github",
+        "owner": "TareqFl",
+        "repo": "lucianPos"
       }
     ]
   }
